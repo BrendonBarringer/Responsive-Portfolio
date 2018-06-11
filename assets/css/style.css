@@ -1,0 +1,249 @@
+/*--general styling*/
+
+html {
+    position: relative;
+    min-height: 100%
+}
+body{
+    background-image: url("http://wallpapers-and-backgrounds.net/wp-content/uploads/2016/10/website-background_1.jpg");
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 0 0 100px;
+    
+}
+img{
+    display: block;
+    width:50%;
+}
+a{
+    text-decoration: none;
+}
+h1,
+h2,
+h3,{
+    margin: 0;
+    padding: 1rem;
+}
+
+
+h2{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-bottom:1px solid #707070;
+}
+p{
+    margin: 0;
+    padding: 1rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+.wrapper{
+    position: relative;
+    max-width: 980px;
+    margin-bottom: 60px;
+}
+
+/*--header styling*/
+
+#header{
+    border-bottom: 1px solid #ffed63;
+    margin-bottom: 1rem;
+}
+#logo{
+    display: block;
+    background-color:#ffed63;
+    color: #4d4d4d;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 2rem;
+    
+}
+#logo:hover{
+    background-color: #e5cb00;
+}
+nav{
+    margin: 1rem;
+}
+.nav_item{
+    text-decoration: none;
+    color:#ffed63;
+    margin: 0.5rem;
+}
+.nav_item:hover{
+    color: #e5cb00;
+}
+
+/*--main area styling*/
+
+#section,
+#aside{
+    color: #4d4d4d;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px 5px rgba(66,66,66,0.75);
+    margin-bottom: 1rem;
+}
+.link_img{
+    display: inline-block;
+    width: 30%;
+    max-width: 75px;
+    margin:auto;
+    padding: 0.5rem;
+}
+
+/*--index.html*/
+
+.profile_img{
+    display: block;
+    margin: auto;
+}
+
+/*--portfolio.html*/
+
+.img_text{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+.porfolio_img{
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid #4d4d4d;
+    height: auto;
+    margin: auto;
+}
+h3{
+    position: absolute;
+    bottom: 10%;
+    background-color: #ffed63;
+    width: 100%;
+    z-index: +1;
+    opacity: 0.9;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*--Contact.html*/
+
+.form{
+    padding: 1rem;
+}
+ form label{
+    display: block;
+    padding: 0.5rem;
+}
+input[type=text]{
+width: 90%;
+margin: auto;
+outline: none;
+border: 1px solid #4d4d4d;
+}
+input[type=text]:focus{
+    border: 1px solid #e5cb00;
+}
+textarea{
+    resize: none;
+    width: 90%;
+    margin: auto;
+    outline: none;
+    border: 1px solid #4d4d4d;
+}
+textarea:focus{
+    border: 1px solid #e5cb00;
+}
+input[type=submit]{
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: #707070;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 0.5rem;
+}
+input[type=submit]:hover{
+    background-color: #4d4d4d;
+
+}
+/*--footer*/
+
+#footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    color:#ffed63;
+    font-size: 0.7rem;
+    border-top: 1px solid #ffed63;
+
+}
+
+/*--Media queries*/
+
+@media (min-width:768px){
+    .wrapper{
+        max-width: 960px;
+        margin: auto;
+    }
+    #header{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    nav{
+      grid-column: end;
+    }
+    #section{
+        text-align: left;
+    }
+    .profile_img{
+        float: left;
+        margin: 0.5rem;
+        width: 20%;
+    }
+
+    /*--unique to portfolio page*/
+    .portfolio_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .img_text{
+        width: 80%;
+        margin: 1rem;
+        text-align: center;
+    }
+    /*--*/
+    input[type=text]{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    imput[type=submit]{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:960px){
+    #main{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 2rem;
+    }
+    .profile_img{
+        width: 35%;
+    }
+    #aside{
+        max-height: 140px;
+    }
+    .link_img{
+        max-width: 50px;
+    }
+    #footer{
+        position: absolute;
+        bottom: 0;
+    }
+
+}
