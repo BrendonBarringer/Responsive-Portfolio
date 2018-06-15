@@ -112,10 +112,10 @@ nav{
     margin-bottom: 5%;
 }
 .porfolio_img{
-    width: 90%;
+    width: 150px;
     border-radius: 5px;
     border: 2px solid #4d4d4d;
-    height: auto;
+    height: 150px;
     margin: auto;
 }
 h3{
@@ -227,6 +227,10 @@ input[type=submit]:hover{
     }
     imput[type=submit]{
         font-size: 2rem;
+    }
+    #projectimage{
+        height: 150px;
+        width: 150px;
     }
 }
 
